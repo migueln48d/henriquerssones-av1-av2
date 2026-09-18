@@ -1,79 +1,108 @@
+```html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neymar Jr. | Início</title>
 
-    <title>stands mais legais de jojo</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#000;color:#fff;font-family:'Montserrat',sans-serif}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+header{position:absolute;top:0;left:0;width:100%;height:75px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;background:rgba(0,0,0,.65);border-bottom:1px solid #333;z-index:10}
+.logo{font-family:'Anton',sans-serif;font-size:34px;color:#fff}
+nav{display:flex;gap:35px}
+nav a{color:#fff;text-decoration:none;font-size:12px;font-weight:700;transition:.3s}
+nav a:hover{color:#e00000}
+
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;background:linear-gradient(90deg,rgba(0,0,0,.96),rgba(0,0,0,.65),rgba(0,0,0,.15)),url("fundo.jpg");background-size:cover;background-position:center}
+.hero-content{margin-left:10%;position:relative;z-index:2}
+.hero-content small{color:#00c853;font-size:13px;font-weight:700;letter-spacing:7px}
+.hero-content h1{font-family:'Anton',sans-serif;font-size:clamp(70px,10vw,140px);line-height:.82;margin-top:15px}
+.hero-content p{margin-top:30px;color:#ccc;font-size:12px;letter-spacing:5px}
+
+.botao{display:inline-block;margin-top:35px;padding:16px 28px;background:#e00000;color:#fff;text-decoration:none;font-size:11px;font-weight:700;transition:.3s}
+.botao:hover{background:#00a844;transform:translateX(7px)}
+.numero{position:absolute;right:8%;bottom:7%;font-family:'Anton',sans-serif;font-size:110px;color:rgba(255,255,255,.08)}
+
+.carreira{background:#000;padding:90px 10%}
+.titulo{display:flex;align-items:center;gap:20px;margin-bottom:50px}
+.titulo span{color:#e00000;font-weight:700}
+.titulo h2{font-family:'Anton',sans-serif;font-size:50px;font-weight:400}
+
+.times{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #333}
+.time{padding:40px 30px;border-right:1px solid #333;transition:.3s}
+.time:last-child{border-right:none}
+.time:hover{background:#0c0c0c}
+.time span{color:#00c853;font-size:12px;font-weight:700}
+.time h3{font-family:'Anton',sans-serif;font-size:42px;font-weight:400;margin:15px 0}
+.time p{color:#888;font-size:13px;line-height:1.8}
+.time a{display:inline-block;margin-top:25px;color:#e00000;text-decoration:none;font-size:11px;font-weight:700;transition:.3s}
+.time a:hover{color:#00c853}
+
+footer{padding:30px;background:#050505;border-top:1px solid #222;text-align:center;color:#555;font-size:10px;letter-spacing:2px}
+
+@media(max-width:800px){
+header{padding:0 25px}
+nav{gap:15px}
+nav a{font-size:9px}
+.hero-content{margin-left:30px}
+.hero-content h1{font-size:65px}
+.times{grid-template-columns:1fr}
+.time{border-right:none;border-bottom:1px solid #333}
+}
+</style>
 </head>
 
 <body>
 
-    <h1>stands</h1>
+<header>
+<div class="logo">NJR</div>
+<nav>
+<a href="index.html">INÍCIO</a>
+<a href="sobre.html">SOBRE</a>
+<a href="informacoes.html">TIMES</a>
+</nav>
+</header>
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
+<section class="hero">
+<div class="hero-content">
+<small>NEYMAR JR.</small>
+<h1>O<br>CRAQUE<br>BRASILEIRO</h1>
+<p>HABILIDADE • VELOCIDADE • TALENTO</p>
+<a href="sobre.html" class="botao">CONHEÇA A HISTÓRIA →</a>
+</div>
+<div class="numero">10</div>
+</section>
 
-            <a class="navbar-brand" href="file:///C:/Users/aluno02.ec/Documents/henriquerssones-av1-av2/index.html">home</a>
+<section class="carreira">
+<div class="titulo">
+<span>01</span>
+<h2>CARREIRA</h2>
+</div>
 
-            <div class="navbar-nav">
-                <a class="nav-link" href="file:///C:/Users/aluno02.ec/Documents/henriquerssones-av1-av2/superfly.html">super fly</a>
+<div class="times">
 
-                <a class="nav-link" href="file:///C:/Users/aluno02.ec/Documents/henriquerssones-av1-av2/softandwet.html">soft and wet</a>
+<div class="time">
+<span>01</span>
+<h3>SANTOS</h3>
+<p>O clube onde Neymar começou sua carreira profissional e ganhou destaque mundial.</p>
+<a href="informacoes.html#santos">VER TÍTULOS →</a>
+</div>
 
-                <a class="nav-link" href="file:///C:/Users/aluno02.ec/Documents/henriquerssones-av1-av2/goldenexperience.html">golden experience</a>
-            </div>
+<div class="time">
+<span>02</span>
+<h3>BARCELONA</h3>
+<p>Um dos períodos mais marcantes da carreira de Neymar no futebol europeu.</p>
+<a href="informacoes.html#barcelona">VER TÍTULOS →</a>
+</div>
 
-        </div>
-    </nav>
-
-    <img src="https://static.jojowiki.com/images/thumb/1/13/latest/20240810200653/Stands_Infobox.png/1200px-Stands_Infobox.png" alt="um conjunto de seres humanoides considerados stands">
-    <style>
-    img {
-    width: 300px;
-    height: auto;
-}</style>
-    <h2>O que sqo stands?</h2>
-
-    <p>
-        stands e um poder apresntado na parte 3 de jojo, e uma manifestacao espiritual da sua energia e peronaidae, tem formatos variaveis, des de humanoides
-        ate estrutura ou sem formato, cada stand te, seu usuario, e cada um tem habilidades diferentes, e cada um tem seu proprio nome, referenciando geralmente musical mas tem excessoes como cartas de tarot,
-        deuses egipicios e quadros artisticos.
-    </p>
-<table class="table">
-    <tr>
-        <th>Stand</th>
-        <th>Parte</th>
-        <th>Usuário</th>
-    </tr>
-
-    <tr>
-        <td>Super Fly</td>
-        <td>Parte 4</td>
-        <td>Toyohiro Kanedaichi</td>
-    </tr>
-
-    <tr>
-        <td>Soft & Wet</td>
-        <td>Parte 8</td>
-        <td>Josuke Higashikata</td>
-    </tr>
-
-    <tr>
-        <td>Golden Experience</td>
-        <td>Parte 5</td>
-        <td>Giorno Giovanna</td>
-    </tr>
-</table>
-    <div class="rodape">
-        <p>informacoes de jojowiki</p>
-    </div>
-
-</body>
-</html>
+<div class="time">
+<span>03</span>
+<h3>PSG</h3>
+<p>Clube franc
+```

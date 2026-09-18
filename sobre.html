@@ -1,0 +1,330 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neymar Jr. | Sobre</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            background: #050505;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-family: 'Anton', sans-serif;
+            font-size: 34px;
+        }
+
+        nav {
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e00000;
+        }
+
+        .topo {
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            padding-left: 10%;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,0.95),
+                    rgba(0,0,0,0.45)
+                ),
+                url("fundo.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .topo small {
+            color: #00c853;
+            font-weight: 700;
+            letter-spacing: 6px;
+        }
+
+        .topo h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 90px;
+            line-height: 0.9;
+            margin-top: 15px;
+        }
+
+        .destaque {
+            color: #00c853;
+            font-weight: 700;
+        }
+
+        .conteudo {
+            max-width: 1000px;
+            margin: auto;
+            padding: 90px 30px;
+        }
+
+        .conteudo h2 {
+            font-family: 'Anton', sans-serif;
+            font-size: 55px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .linha {
+            border-left: 3px solid #e00000;
+            padding-left: 30px;
+        }
+
+        .conteudo p {
+            color: #999;
+            font-size: 15px;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 60px;
+        }
+
+        .card {
+            padding: 30px;
+            background: #090909;
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #e00000;
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-family: 'Anton', sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 45px;
+            padding: 16px 25px;
+            background: #e00000;
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #00a844;
+        }
+
+        footer {
+            padding: 30px;
+            background: #050505;
+            border-top: 1px solid #222;
+            text-align: center;
+            color: #555;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 800px) {
+
+            nav {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 9px;
+            }
+
+            .topo {
+                padding-left: 30px;
+            }
+
+            .topo h1 {
+                font-size: 65px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            NJR
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                INÍCIO
+            </a>
+
+            <a href="sobre.html">
+                SOBRE
+            </a>
+
+            <a href="informacoes.html">
+                TIMES
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="topo">
+
+        <div>
+
+            <small>
+                NEYMAR JR.
+            </small>
+
+            <h1>
+                SOBRE<br>
+                <span class="destaque">NEYMAR</span>
+            </h1>
+
+        </div>
+
+    </section>
+
+    <section class="conteudo">
+
+        <h2>
+            QUEM É NEYMAR?
+        </h2>
+
+        <div class="linha">
+
+            <p>
+                Neymar Jr. é um jogador brasileiro conhecido
+                por sua habilidade, criatividade, velocidade
+                e dribles.
+            </p>
+
+            <p>
+                Ele começou sua carreira profissional no
+                <span class="destaque">Santos</span>, onde ganhou
+                destaque e conquistou seus primeiros grandes títulos.
+            </p>
+
+            <p>
+                Depois, Neymar atuou pelo Barcelona, Paris
+                Saint-Germain e Al-Hilal, além de defender
+                a Seleção Brasileira.
+            </p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+                    HABILIDADE
+                </h3>
+
+                <p>
+                    Conhecido pelos dribles, criatividade
+                    e capacidade de criar jogadas.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    CARREIRA
+                </h3>
+
+                <p>
+                    Atuou em grandes clubes do futebol
+                    brasileiro e europeu.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    BRASIL
+                </h3>
+
+                <p>
+                    Neymar construiu uma importante
+                    trajetória defendendo a Seleção Brasileira.
+                </p>
+
+            </div>
+
+        </div>
+
+        <a href="informacoes.html" class="botao">
+            VER TIMES E TÍTULOS →
+        </a>
+
+    </section>
+
+    <footer>
+        NJR — NEYMAR JR. — SITE ESCOLAR — 2026
+    </footer>
+
+</body>
+
+</html>
+```
